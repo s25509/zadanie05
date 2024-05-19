@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace EntityFramework_Core.DTOs;
+﻿namespace EntityFramework_Core.DTOs;
 
 public class TripDTO
 {

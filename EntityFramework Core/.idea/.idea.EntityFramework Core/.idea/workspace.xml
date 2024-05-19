@@ -9,10 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd6a0d17-5834-4d39-9cb3-c116586d2c19" name="Changes" comment="added some inserts">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EntityFramework Core/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EntityFramework Core/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Context/_2019sbdContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Context/_2019sbdContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+    <list default="true" id="bd6a0d17-5834-4d39-9cb3-c116586d2c19" name="Changes" comment="added first endpoint">
+      <change beforePath="$PROJECT_DIR$/Controllers/TripsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/TripsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DTOs/TripsDTOs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DTOs/TripsDTOs.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://G:/00.PJATK/APBD/Zadanie05/EntityFramework Core/Context/_2019sbdContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://G:/00.PJATK/APBD/Zadanie05/EntityFramework Core/Context/_2019sbdContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://G:/00.PJATK/APBD/Zadanie05/EntityFramework Core/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://G:/00.PJATK/APBD/Zadanie05/EntityFramework Core/Program.cs" root0="SKIP_HIGHLIGHTING" />
@@ -116,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716043462514</updated>
-      <workItem from="1716043463564" duration="14160000" />
+      <workItem from="1716043463564" duration="16612000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project">
       <option name="closed" value="true" />
@@ -166,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716109634165</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added first endpoint">
+      <option name="closed" value="true" />
+      <created>1716110842554</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716110842554</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +189,7 @@
     <MESSAGE value="desperate fixes" />
     <MESSAGE value="FINALLY got 'dotnet ef dbcontext scaffold' to work" />
     <MESSAGE value="added some inserts" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some inserts" />
+    <MESSAGE value="added first endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="added first endpoint" />
   </component>
 </project>

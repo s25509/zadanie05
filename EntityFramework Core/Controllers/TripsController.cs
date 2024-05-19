@@ -1,7 +1,5 @@
 ﻿using EntityFramework_Core.Context;
 using EntityFramework_Core.DTOs;
-using EntityFramework_Core.Models;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,6 +10,7 @@ namespace EntityFramework_Core.Controllers;
 public class TripsController(_2019sbdContext context) : ControllerBase
 {
     [HttpGet]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetTripsAsync()
     {
         var trips = await context.Trips
