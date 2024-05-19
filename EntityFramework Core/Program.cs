@@ -1,3 +1,5 @@
+using EntityFramework_Core.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
-// builder.Services.AddDbContext<MyContext>();
+builder.Services.AddDbContext<_2019sbdContext>();
 
 var app = builder.Build();
 
