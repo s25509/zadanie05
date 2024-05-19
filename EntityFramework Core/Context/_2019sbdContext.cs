@@ -25,9 +25,8 @@ public partial class _2019sbdContext : DbContext
     public virtual DbSet<Trip> Trips { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder
-            .UseSqlServer("Server=db-mssql16;Database=2019SBD;Trusted_Connection=True;TrustServerCertificate=True;Connection Timeout=600;Command Timeout=600")
-            .LogTo(Console.WriteLine, LogLevel.Information);
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Server=db-mssql16;Database=2019SBD;Trusted_Connection=True;TrustServerCertificate=True;Connection Timeout=600;Command Timeout=600");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -39,7 +38,6 @@ public partial class _2019sbdContext : DbContext
 
             entity.ToTable("Client");
 
-            entity.Property(e => e.IdClient).ValueGeneratedNever();
             entity.Property(e => e.Email).HasMaxLength(120);
             entity.Property(e => e.FirstName).HasMaxLength(120);
             entity.Property(e => e.LastName).HasMaxLength(120);
@@ -73,7 +71,6 @@ public partial class _2019sbdContext : DbContext
 
             entity.ToTable("Country");
 
-            entity.Property(e => e.IdCountry).ValueGeneratedNever();
             entity.Property(e => e.Name).HasMaxLength(120);
 
             entity.HasMany(d => d.IdTrips).WithMany(p => p.IdCountries)
@@ -100,7 +97,6 @@ public partial class _2019sbdContext : DbContext
 
             entity.ToTable("Trip");
 
-            entity.Property(e => e.IdTrip).ValueGeneratedNever();
             entity.Property(e => e.DateFrom).HasColumnType("datetime");
             entity.Property(e => e.DateTo).HasColumnType("datetime");
             entity.Property(e => e.Description).HasMaxLength(220);
